@@ -8,7 +8,7 @@ This is the Udacity Neighborhood Map Project showing a list of Places of interes
 
 There are two methods:
 1. Visit _____ to access a live demo.
-2. Fork the repro and open index.html is your browser of choice.
+2. Fork the repro and open index.html in your browser of choice.
 
 ## Resources Used During Development
 
