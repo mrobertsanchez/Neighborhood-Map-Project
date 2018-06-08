@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>SD Neighborhood Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/styles.css">
+<body>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+    <div class="w3-cell-row w3-container">
+      <input type="text" data-bind="value: query, valueUpdate: 'keyup'" placeholder="Type to filter..." class="w3-input w3-border w3-cell"></input>
+    </div>
+    <ul class="w3-ul w3-hoverable" data-bind="foreach: filteredPlaces">
+      <li>
+        <button class=w3-button data-bind="text:title, click:show"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w3-main " style="margin-left:200px">
+    <div class="w3-blue-grey w3-cell-row">
+      <button class="w3-button w3-blue-grey w3-xlarge w3-hide-large w3-cell" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container w3-cell">
+        <h2>San Diego Places of Interest</h2>
+      </div>
+    </div>
+    <div class="w3-container">
+      <div id="map"></div>
+    </div>
+
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/knockout-3.4.2.js"></script>
+<script src="js/main.js"></script>
+<script async defer
+    src=
+    "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBVLbbWcsIKQwLRYeuIRQybH4mCXv2IUbA&v=3&callback=initMap">
+</script>
+</body>
+</html>
