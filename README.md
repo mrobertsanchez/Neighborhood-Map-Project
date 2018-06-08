@@ -7,7 +7,7 @@ This is the Udacity Neighborhood Map Project showing a list of Places of interes
 ## Getting Started
 
 1. Fork the repro and open index.html in your browser of choice.
-2. Download the project and all its files. Alternatively you can close the repository
+2. Download the project and all its files. Alternatively you can clone the repository
 3. Open index.html in a browser of your choice
 
 ## Resources Used During Development
