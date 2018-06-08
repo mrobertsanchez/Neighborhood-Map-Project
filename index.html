@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>SD Neighborhood Map</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,11 +8,11 @@
   <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <div class="w3-cell-row w3-container">
-      <input type="text" data-bind="value: query, valueUpdate: 'keyup'" placeholder="Type to filter..." class="w3-input w3-border w3-cell"></input>
+      <input type="text" data-bind="value: query, valueUpdate: 'keyup'" placeholder="Type to filter..." class="w3-input w3-border w3-cell">
     </div>
     <ul class="w3-ul w3-hoverable" data-bind="foreach: filteredPlaces">
       <li>
-        <button class=w3-button data-bind="text:title, click:show"></a>
+        <button class=w3-button data-bind="text:title, click:show"></button>
       </li>
     </ul>
   </div>
@@ -34,7 +34,7 @@
 <script src="js/main.js"></script>
 <script async defer
     src=
-    "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBVLbbWcsIKQwLRYeuIRQybH4mCXv2IUbA&v=3&callback=initMap">
+    "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBVLbbWcsIKQwLRYeuIRQybH4mCXv2IUbA&v=3&callback=initMap" onerror="mapsError()">
 </script>
 </body>
 </html>

@@ -148,6 +148,6 @@ function populateInfoWindow(marker, infowindow) {
 }
 
 // this is an error handler should the map fail to load
-function googleMapsError() {
+function mapsError() {
     alert('Google Maps Is Not Working Right Now!');
 }
